@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fffff0"
+    android:padding="20dp"
+    tools:context=".AddNoteActivity">
+
+    <TextView
+        android:id="@+id/mmm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/titletextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Set new Goal or Reward"
+        android:textColor="#FFC100"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#FFC100"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/titleinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFF0"
+            android:hint="Reward or Goal"
+            android:textColorHint="#B6B6B6"
+            android:textColor="@color/black"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/descriptioninput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFF0"
+            android:textColor="@color/black"
+            android:gravity="top"
+            android:hint="Decription"
+            android:lines="10"
+            android:textColorHint="#B6B6B6"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/costinput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:background="#FFFFF0"
+            android:textColor="@color/black"
+            android:gravity="top"
+            android:hint="Cost"
+            android:textColorHint="#B6B6B6"
+            android:lines="10"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/savebtn"
+        android:text="SAVE NOTE"
+        android:layout_gravity="center"
+        android:backgroundTint="#FFC100"
+
+        android:textColor="#F9F9F9"/>
+
+
+
+</LinearLayout>
